@@ -9,11 +9,21 @@ Sinta-se à vontade para explorar este repositório e mergulhar nas ideias por t
 ## Serviços
 
 ### User
+O módulo de usuários gerencia informações de usuários, incluindo os campos Id, Nome, Email e Telefone. Ele permite a criação, leitura, atualização e exclusão (CRUD) de registros de usuários, garantindo que cada usuário tenha um identificador único (Id), um nome, um endereço de email e um número de telefone para contato.
 
+- POST / USER
+- GET /USER
+- GET /USER/:ID
+- PATCH /USER/:ID
+- DELETE /USER/:ID
+  
 ### Auth
+O módulo de autenticação gerencia funções essenciais para a segurança do sistema. Ele permite a autenticando-os durante o login com suas credenciais (como email e senha) e gerando tokens de acesso. Além disso, posteriormente será vai ser possivel que o módulo facilita o logout, invalidando tokens e encerrando sessões de usuário. Ele também verifica tokens de autenticação para assegurar que apenas usuários autorizados acessem recursos protegidos. Em caso de esquecimento de senha, o módulo oferece a recuperação de senha, permitindo que usuários redefinam suas senhas de forma segura. Dessa forma, o módulo de autenticação protege dados e funcionalidades sensíveis, garantindo que apenas usuários autenticados tenham acesso a determinadas partes do sistema.
 
+- POST /AUTH
+  
 ### API Gateway
-
+O API Gateway atua como um ponto de entrada para diferentes serviços do sistema, funcionando como um proxy. Ele recebe as requisições dos clientes e as encaminha para o serviço apropriado, abstraindo a complexidade do sistema backend. Além disso, o API Gateway pode realizar tarefas como autenticação, autorização, balanceamento de carga, roteamento de solicitações e agregação de respostas, melhorando a eficiência e a segurança das comunicações entre clientes e serviços backend.
 ## Boas Práticas
 
 ### TDD
