@@ -1,0 +1,9 @@
+[submodule "service-gateway"]
+	path = service-gateway
+	url = git@github.com:RafaelSilva-si/service-gateway.git
+[submodule "service-auth"]
+	path = service-auth
+	url = git@github.com:RafaelSilva-si/service-auth.git
+[submodule "service-user"]
+	path = service-user
+	url = git@github.com:RafaelSilva-si/service-user.git
