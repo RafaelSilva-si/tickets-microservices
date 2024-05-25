@@ -7,3 +7,6 @@
 [submodule "service-user"]
 	path = service-user
 	url = git@github.com:RafaelSilva-si/service-user.git
+[submodule "service-events"]
+	path = service-events
+	url = git@github.com:RafaelSilva-si/service-events.git
