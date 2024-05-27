@@ -22,6 +22,33 @@ O módulo de autenticação gerencia funções essenciais para a segurança do s
 
 - POST /AUTH (email, password)
   
+### Events
+O módulo de evento gerencia informações de eventos, incluindo os campos Id, titulo, capacidade endereço e etc.... Ele permite a criação, leitura, atualização e exclusão (CRUD) de registros de eventos, garantindo que cada evento tenha um identificador único (Id), um titulo, um endereço do evento.
+
+- POST / EVENT (
+  title
+  date
+  description
+  capacity
+  cover
+  galerry
+  category
+  status)
+
+- GET /EVENT (params para filtro: (title, date, category))
+- GET /EVENT/:ID
+- PATCH /EVENT/:ID (
+  title
+  date
+  description
+  capacity
+  cover
+  galerry
+  category
+  status)
+
+- DELETE /EVENT/:ID
+
 ### API Gateway
 O API Gateway atua como um ponto de entrada para diferentes serviços do sistema, funcionando como um proxy. Ele recebe as requisições dos clientes e as encaminha para o serviço apropriado, abstraindo a complexidade do sistema backend. Além disso, o API Gateway pode realizar tarefas como autenticação, autorização, balanceamento de carga, roteamento de solicitações e agregação de respostas, melhorando a eficiência e a segurança das comunicações entre clientes e serviços backend.
 ## Boas Práticas
