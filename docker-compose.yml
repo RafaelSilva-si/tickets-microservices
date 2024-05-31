@@ -1,5 +1,13 @@
 
 services:
+  mongodb:
+    image: mongo:5.0
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
   user-service:
     build:
       context: ./service-user
@@ -9,7 +17,7 @@ services:
     env_file:
       - ./service-user/.env
     depends_on:
-      - mysql
+      - mongodb
 
   auth-service:
     build:
@@ -54,4 +62,5 @@ services:
       - mysql-data:/var/lib/mysql
 
 volumes:
+  mongo-data:
   mysql-data:
