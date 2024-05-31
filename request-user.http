@@ -1,6 +1,9 @@
 ### Obter todos os usuários
 GET http://localhost:3000/user
 
+### Obter usuário por ID
+GET http://localhost:3000/user/6659cf243321ce436e7ec97d
+
 ### Adicionar um novo usuário
 POST http://localhost:3000/user
 Content-Type: application/json
