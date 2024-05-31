@@ -49,6 +49,27 @@ O módulo de evento gerencia informações de eventos, incluindo os campos Id, t
 
 - DELETE /EVENT/:ID
 
+### Cart
+
+O módulo de evento gerencia informações do Cart, incluindo os itemID, userID, qtd e etc.... Ele permite a criação, leitura, atualização e exclusão (CRUD) de registros de cart, garantindo que cada cart tenha um identificador único (Id), um status, e items adicionados.
+
+- POST / CART (
+  cartID (optional)
+  itemID
+  userID
+  qtd
+  )
+
+- GET /CART/:ID - Busca detalhes do cart com items.
+
+- PATCH /CART/ - Edita Qtd do item.
+(
+  id
+  qtd
+)
+
+- DELETE /CART/:ID Limpa todo o Carrinho
+
 ### API Gateway
 O API Gateway atua como um ponto de entrada para diferentes serviços do sistema, funcionando como um proxy. Ele recebe as requisições dos clientes e as encaminha para o serviço apropriado, abstraindo a complexidade do sistema backend. Além disso, o API Gateway pode realizar tarefas como autenticação, autorização, balanceamento de carga, roteamento de solicitações e agregação de respostas, melhorando a eficiência e a segurança das comunicações entre clientes e serviços backend.
 ## Boas Práticas
