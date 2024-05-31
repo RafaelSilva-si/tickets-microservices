@@ -1,0 +1,26 @@
+### Adicionar item ao carrinho
+POST http://localhost:3000/cart
+Content-Type: application/json
+
+{
+  "cartID": "66593cf0bb7417020e2d2d18",
+  "itemID": "665924431bc437d4851f5681",
+  "userID": "6659178a4ff028ec73437f71",
+  "qtd": 2
+}
+
+### Obter detalhes do carrinho
+GET http://localhost:3000/cart/66593cf0bb7417020e2d2d18
+
+### Atualizar quantidade do item no carrinho
+PATCH http://localhost:3000/cart
+Content-Type: application/json
+
+{
+  "cartID": "66593cf0bb7417020e2d2d18",
+  "itemID": "66593d9e6a4c927443f420fe",
+  "qtd": 3
+}
+
+### Limpar carrinho
+DELETE http://localhost:3000/cart/66593cf0bb7417020e2d2d18
