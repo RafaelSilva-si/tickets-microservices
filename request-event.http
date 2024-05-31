@@ -2,7 +2,7 @@
 GET http://localhost:3000/event/
 
 ### Obter evento por ID
-GET http://localhost:3000/event/6659231144267c3963498a33
+GET http://localhost:3000/event/665924431bc437d4851f5681
 
 ### Adicionar um novo evento
 POST http://localhost:3000/event/
@@ -16,18 +16,21 @@ Content-Type: application/json
   "category": "Categoria do Evento",
   "status": "Ativo",
   "location": "Expo SP",
+  "cover": "teste",
   "price": 50
 }
 
 ### Atualizar um evento existente
-PATCH http://localhost:3000/event/665924431bc437d4851f5681
+PATCH http://localhost:3000/event/665a0d0bb6409a4984e7ce07
 Content-Type: application/json
 
 {
   "title": "Novo Título do Evento",
   "date": "2024-06-01T12:00:00.000Z",
-  "description": "Nova descrição do evento"
+  "description": "Nova descrição do evento",
+  "cover:": "teste",
+  "price": 59
 }
 
 ### Remover um evento
-DELETE http://localhost:3000/event/665941916610360de4e74e58
+DELETE http://localhost:3000/event/665a0ca6b6409a4984e7cdf8
