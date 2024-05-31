@@ -4,7 +4,7 @@ Content-Type: application/json
 
 {
   "cartID": "66593cf0bb7417020e2d2d18",
-  "item": "665a0d0bb6409a4984e7ce07",
+  "itemID": "665a0d0bb6409a4984e7ce07",
   "userID": "6659178a4ff028ec73437f71",
   "qtd": 2
 }
