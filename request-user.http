@@ -15,18 +15,18 @@ Content-Type: application/json
 }
 
 ### Atualizar um usuário
-PATCH http://localhost:3000/user/665906cc95c59ac49266dbf5
+PATCH http://localhost:3000/user/6659415da285c24e9542be12
 Content-Type: application/json
 
 {
-  "name": "João da Silva",
+  "name": "João da Silva Ramos",
   "email": "joao@example.com",
   "CPF": "123.456.789-00",
   "phone": "(11) 99999-9999"
 }
 
 ### Remover um usuário
-DELETE http://localhost:3000/user/665906cc95c59ac49266dbf5
+DELETE http://localhost:3000/user/6659178a4ff028ec73437f71
 
 ### Validar Usuário
 POST http://localhost:3000/user/validate

@@ -17,8 +17,7 @@ PATCH http://localhost:3000/cart
 Content-Type: application/json
 
 {
-  "cartID": "66593cf0bb7417020e2d2d18",
-  "itemID": "66593d9e6a4c927443f420fe",
+  "id": "66593d9e6a4c927443f420fe",
   "qtd": 3
 }
 
