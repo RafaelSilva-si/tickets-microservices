@@ -1,7 +1,5 @@
 # E-commerce com Microserviço
 
-> Status: Em desenvolvimento ⚙
-
 Este projeto exemplifica os conceitos e fundamentos dos microserviços, implementados utilizando Node.js e Express. O foco principal é a criação de uma aplicação de vendas de tickets para eventos. Adotando práticas de Clean Code e TDD (Test-Driven Development), este projeto não apenas oferece uma implementação funcional, mas também destaca a importância da organização do código e da escrita de testes robustos.
 
 Sinta-se à vontade para explorar este repositório e mergulhar nas ideias por trás desta implementação. Aproveite para examinar como os microserviços podem ser estruturados e como princípios de desenvolvimento limpo e TDD podem ser aplicados em um contexto real.
